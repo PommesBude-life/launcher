@@ -2,6 +2,8 @@ const { app, BrowserWindow } = require('electron')
 const path = require('node:path')
 require('update-electron-app')()
 
+// handling startup events
+if (require('electron-squirrel-startup')) app.quit();
 
 const createWindow = () => {
     const win = new BrowserWindow({
@@ -21,7 +23,7 @@ const createWindow = () => {
 app.whenReady().then(() => {
     createWindow()
 
-
+    app.setAppUserModelId("life.pommesbude.launcher.launcher");
 
     app.on('window-all-closed', () => {
         if (process.platform !== 'darwin') app.quit()

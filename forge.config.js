@@ -12,7 +12,7 @@ module.exports = {
           name: 'launcher'
         },
         prerelease: true,
-        draft: true
+        draft: false
       }
     }
   ],
