@@ -11,7 +11,7 @@ module.exports = {
           owner: 'PommesBude-life',
           name: 'launcher'
         },
-        prerelease: true,
+        prerelease: false,
         draft: false
       }
     }

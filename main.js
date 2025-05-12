@@ -1,9 +1,11 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('node:path')
-require('update-electron-app')()
 
 // handling startup events
 if (require('electron-squirrel-startup')) app.quit();
+
+// handling auto update
+require('update-electron-app');
 
 const createWindow = () => {
     const win = new BrowserWindow({
@@ -21,6 +23,8 @@ const createWindow = () => {
 }
 
 app.whenReady().then(() => {
+
+
     createWindow()
 
     app.setAppUserModelId("life.pommesbude.launcher.launcher");
