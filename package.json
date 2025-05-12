@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.pommesbude.life/pommesbude/pb-launcher.git"
+    "url": "https://github.com/PommesBude-life/launcher.git"
   },
   "author": "Jay for PommesBude.life",
   "license": "ISC",
@@ -23,6 +23,7 @@
     "@electron-forge/maker-zip": "^7.8.1",
     "@electron-forge/plugin-auto-unpack-natives": "^7.8.1",
     "@electron-forge/plugin-fuses": "^7.8.1",
+    "@electron-forge/publisher-github": "^7.8.1",
     "@electron/fuses": "^1.8.0",
     "autoprefixer": "^10.4.21",
     "electron": "^36.2.0",
