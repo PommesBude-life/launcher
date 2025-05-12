@@ -1,7 +1,7 @@
 {
   "name": "pb-launcher",
   "productName": "PommesBude - Launcher",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "official launcher for pommesbude a3",
   "main": "main.js",
   "scripts": {

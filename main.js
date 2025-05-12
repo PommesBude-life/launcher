@@ -20,6 +20,13 @@ const createWindow = () => {
     })
 
     win.loadFile('src/index.html')
+    win.setAutoHideMenuBar(true)
+    win.setMenuBarVisibility(true)
+    win.setAppDetails({
+        appId: 'PommesBude.launcher',
+        relaunchDisplayName: app.getName(),      // optional
+    });
+
 }
 
 app.whenReady().then(() => {
